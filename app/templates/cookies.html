@@ -1,0 +1,12 @@
+<h1>Cookies</h1>
+<ul>
+  {% for cookie in cookies %}
+    <li>
+      {% if cookie.price == 0.25 %}
+        <s>{{ cookie.name }}</s>
+      {% else %}
+        <a href="/cookies/{{ cookie.slug }}">{{ cookie.name }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

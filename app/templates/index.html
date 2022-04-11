@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css')}}">
+    {% if title %}
+        <title> 🇺🇦 Ucraine Help - {{ title }} </title></title>
+    {% else %}
+        <title> 🇺🇦 Ucraine Help </title>
+    {% endif %}
+    
+</head>
+<body class="body-index">
+
+
+    <nav class="nav-bar">
+
+        <a id="heading" href="{{ url_for('nav_bar.index') }}"><h1>🇺🇦 #StandWithUkraine</h1></a>
+
+        <ul class="properties">
+            <a class="item1" href="{{ url_for('nav_bar.register') }}">housing</a>
+            <a class="item1" href="{{ url_for('nav_bar.login') }}">supplies</a>
+            <a class="item1" href="{{ url_for('nav_bar.register') }}">chat</a>
+        </ul>
+
+
+        <ul class="reglog">
+            <a class="item1" href="{{ url_for('nav_bar.register') }}">register</a>
+            <a class="item1" href="{{ url_for('nav_bar.login') }}">login</a>
+        </ul>
+    </nav>
+    
+
+    <hr class="h">
+    
+   
+
+
+    <h3>Ukraine is fighting for 25 days and your help is crucial</h3>
+</body>
+</html>

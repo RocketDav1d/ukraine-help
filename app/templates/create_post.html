@@ -1,0 +1,18 @@
+{% from "_formhelpers.html" import render_field %}
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+
+<div class="log-in">
+    <form method="POST" action="">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+        {{ render_field(form.title) }}
+        {{ render_field(form.content) }}
+        {{ render_field(form.submit) }}
+    </form>
+</div>
+
+{% endblock %}

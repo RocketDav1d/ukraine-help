@@ -1,0 +1,4 @@
+Venv
+.pytest_cache
+database.db
+__pycache__

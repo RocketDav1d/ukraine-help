@@ -1,0 +1,163 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 15% 20% 15%;
+    grid-template-rows: repeat(3, 30px [row-start]);
+    font-family: 'Fredoka', sans-serif;
+    background-color: #E2E8F0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #428bca;
+}
+
+
+#h1-nav-bar {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-self: center;
+}
+
+.nav-bar ul {
+    grid-column-start: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-row-start: 2;
+    list-style-type: none;
+}
+
+
+
+.content {
+    display: grid;
+    border: 1px solid blue;
+    margin-top: 110px;
+    margin-left: 60px;
+    margin-right: 60px;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    grid-template-rows: [row1-start] 200px [row1-end] 200px [third-line] 200px [last-line];
+
+}
+
+
+.content1 {
+    border: 1px solid red;
+}
+
+.content2 {
+    border: 1px solid green;
+}
+
+.content3 {
+    border: 1px solid blue;
+}
+
+/* housing site */
+
+
+.housing-form input{
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: white;
+    outline: none;
+    background-color: #091540;
+;
+    
+}
+
+.housing-form input:hover {
+    border-color: #091540
+}
+
+.housing-form input:focus {
+    border-color: #0b163f;
+}
+
+
+.housing-input-and-label {
+    margin-top: 10px;
+}
+
+.housing-input-and-label label {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2rem;
+}
+
+
+.housing {
+    padding: 150px;
+    padding-top: 100px;
+}
+
+.housing-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #E2E8F0;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.log-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

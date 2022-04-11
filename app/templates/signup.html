@@ -1,0 +1,45 @@
+{% from "_formhelpers.html" import render_field %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css')}}">
+    {% if title %}
+        <title> 🇺🇦 Ucraine Help - {{ title }} </title></title>
+    {% else %}
+        <title> 🇺🇦 Ucraine Help </title>
+    {% endif %}
+    
+</head>
+<body>
+    <div class="nav-bar-wrapper">
+        <nav class="nav-bar">
+            <a id="h1-nav-bar"href="{{ url_for('nav_bar.index') }}"><h1>🇺🇦 Ucraine Help</h1></a>
+
+            <ul>
+                <a class="item1" href="{{ url_for('nav_bar.register') }}">register</a>
+                <a class="item1" href="{{ url_for('nav_bar.login') }}">login</a>
+            </ul>
+        </nav>
+    </div>
+    
+    <h1 class="sign-up">SignUp</h1>
+
+    <div class="sign-up">
+        <form method="POST" action="/signup" autocomplete="off">
+            {{ form.csrf_token }}
+            {{ form.hidden_tag() }}
+            {{ render_field(form.username) }}
+            {{ render_field(form.email) }}
+            {{ render_field(form.password) }}
+            <button type="submit">Sign in</button> 
+        </form>
+    </div>
+</body>
+</html>

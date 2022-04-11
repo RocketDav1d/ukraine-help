@@ -1,0 +1,22 @@
+{% from "_formhelpers.html" import render_field %}
+
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>{{ current_user.name }}</h1>
+    <h1>{{ current_user.email }}</h1>
+    <img src="{{ image_file }}">
+
+    <div class="log-in">
+        <form method="POST" action="/account">
+            {{ render_field(form.username) }}
+            {{ render_field(form.email) }}
+            {{ render_field(form.picture) }}
+            <button type="submit">Sign in</button>
+            
+        </form>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,56 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+body {
+    background-image: linear-gradient(50deg,white 0% ,#d6d7d4 100%)
+}
+ 
+
+.nav-bar {
+    display: flex;
+    grid-template-columns: calc(100% / 7);
+}
+
+#heading {
+    grid-column-start: 2;
+}
+
+.properties {
+    grid-column-start: 4;
+}
+
+.reglog {
+    grid-column-start: 6;
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.h {
+    width: 90%;
+    height: 4px;
+    border: none;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 90px;
+
+
+
+}
+
+.nav-bar {
+
+}
